@@ -1,0 +1,8 @@
+.content {
+  display: flex;
+  background-color: red;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+
+}
