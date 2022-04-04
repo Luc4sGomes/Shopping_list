@@ -1,4 +1,13 @@
-<div class="content">
-  <input type="text" class="input-item" />
-  <button type="button" id="buttonSubmit">Add Item on Cart</button>
-</div>
+<section class="container">
+  <h1>Task List <i class="fas fa-tasks"></i></h1>
+
+  <p>
+      <input type="text"class="input-task" #inputValue>
+      <button class="btn-task" (click)="addValueInList(inputValue.value)">Add</button>
+  </p>
+
+  <ul>
+    <li *ngFor="let item of itens"> {{item}} </li>
+  </ul>
+
+</section>
